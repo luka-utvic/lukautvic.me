@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luka Utvic - College Life & Future Plans</title>
+    <title>Luka Utvic - Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -16,35 +16,107 @@
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background: #2d3748;
+            padding: 30px 20px;
+            overflow-y: auto;
+        }
+        .sidebar h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .sidebar a {
+            display: block;
+            color: #e2e8f0;
+            text-decoration: none;
+            padding: 12px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .sidebar a:hover {
+            background: #4a5568;
+            padding-left: 20px;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 40px;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
             background: white;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        h1 {
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+        }
+        .header-text h1 {
             color: #667eea;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             font-size: 2.5em;
+        }
+        .header-text .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .contact-links a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: #f7fafc;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+        .contact-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+        section {
+            margin-bottom: 40px;
         }
         h2 {
             color: #764ba2;
-            margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.8em;
         }
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
         p {
             margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-        .intro {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 30px;
+            font-size: 1.05em;
         }
         ul {
             margin-left: 30px;
@@ -52,13 +124,40 @@
         }
         li {
             margin-bottom: 10px;
-            font-size: 1.1em;
+            font-size: 1.05em;
         }
-        .highlight {
-            background: #f0f0f0;
+        .experience-item {
+            margin-bottom: 30px;
             padding: 20px;
+            background: #f7fafc;
+            border-radius: 8px;
             border-left: 4px solid #667eea;
-            margin: 20px 0;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 1.2em;
+        }
+        .company {
+            color: #667eea;
+            font-weight: 600;
+        }
+        .date {
+            color: #718096;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
         }
         footer {
             text-align: center;
@@ -67,48 +166,149 @@
             border-top: 2px solid #eee;
             color: #777;
         }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .main-content {
+                margin-left: 200px;
+                padding: 20px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Luka Utvic</h1>
-        <p class="intro">Welcome to my personal website! Here's a little about my college journey and what I'm planning for the future.</p>
-        
-        <h2>About Me</h2>
-        <p>I'm a college student navigating through an exciting time of learning, growth, and self-discovery. This website is my space to share what I'm up to and where I'm headed.</p>
-        
-        <h2>College Life</h2>
-        <p>My college experience has been filled with:</p>
-        <ul>
-            <li>Challenging coursework that pushes me to think critically</li>
-            <li>Meeting amazing people from diverse backgrounds</li>
-            <li>Getting involved in campus activities and student organizations</li>
-            <li>Balancing academics with personal interests</li>
-            <li>Learning new skills both inside and outside the classroom</li>
-        </ul>
-        
-        <div class="highlight">
-            <h2>Current Focus</h2>
-            <p>Right now, I'm focusing on building my knowledge and skills while exploring different opportunities. I'm particularly interested in learning about business, technology, and entrepreneurship.</p>
+    <div class="sidebar">
+        <h3>Navigation</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="header" id="home">
+                <img src="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/145016510/photo.jpg" alt="Luka Utvic" class="profile-img">
+                <div class="header-text">
+                    <h1>Luka Utvic</h1>
+                    <p class="subtitle">Business Student at University of Illinois Chicago</p>
+                    <div class="contact-links">
+                        <a href="mailto:lukautvic07@gmail.com">📧 Email</a>
+                        <a href="tel:+12244093527">📱 (224) 409-3527</a>
+                        <a href="https://www.linkedin.com/in/luka-utvic" target="_blank">💼 LinkedIn</a>
+                        <a href="#">🤝 Handshake</a>
+                    </div>
+                </div>
+            </div>
+            
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm a Business student at the University of Illinois Chicago with hands-on experience in retail operations, customer service, and technical support. I'm passionate about learning, growth, and self-discovery, always seeking new opportunities to develop my skills in business, technology, and entrepreneurship.</p>
+            </section>
+            
+            <section id="experience">
+                <h2>Work Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Clerk</div>
+                    <div class="company">Videogames Then Now</div>
+                    <div class="date">JUNE 2025 - PRESENT | Harwood Heights, IL</div>
+                    <ul>
+                        <li>Operate the cash register and handle customer transactions accurately and efficiently</li>
+                        <li>Provide knowledgeable customer service, assisting shoppers with game selections and product inquiries</li>
+                        <li>Prepare, price, and organize video games and consoles for sale, ensuring all items are in proper condition</li>
+                        <li>Maintain store cleanliness and presentation, including cleaning shelves, displays, and merchandise</li>
+                        <li>Manage store operations independently during shifts, ensuring smooth daily workflow and customer satisfaction</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Associate</div>
+                    <div class="company">Hollister Co.</div>
+                    <div class="date">APRIL 2025 - JUNE 2025 | Fashion Outlets</div>
+                    <ul>
+                        <li>Delivered exceptional customer service by assisting shoppers, promoting brand products, and maintaining store presentation</li>
+                        <li>Operated POS systems to process transactions accurately and efficiently</li>
+                        <li>Supported inventory management through restocking, tagging, and organizing merchandise</li>
+                        <li>Maintained visual standards and ensured a clean, inviting store environment</li>
+                        <li>Collaborated with team members to meet daily sales goals and uphold brand image</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Auditorium Staff</div>
+                    <div class="company">Ridgewood High School</div>
+                    <div class="date">SEPTEMBER 2024 - JUNE 2025 | Norridge, IL</div>
+                    <ul>
+                        <li>Assisted with the setup and breakdown of audio, lighting, and stage equipment for school events and performances</li>
+                        <li>Supported technical operations during assemblies, concerts, and theater productions</li>
+                        <li>Ensured safety protocols were followed backstage and in audience areas</li>
+                        <li>Collaborated with faculty, performers, and other staff to ensure smooth event execution</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Computer Science/CAD Camp Assistant</div>
+                    <div class="company">Ridgewood High School</div>
+                    <div class="date">SEPTEMBER 2022 - JANUARY 2023 | Norridge, IL</div>
+                    <ul>
+                        <li>Supported instructors in teaching CAD and basic computer science concepts to middle school students</li>
+                        <li>Assisted campers with hands-on projects, software navigation, and troubleshooting technical issues</li>
+                        <li>Helped set up and maintain computers, 3D printers, and other equipment used during sessions</li>
+                        <li>Fostered a positive learning environment by encouraging participation and providing one-on-one guidance</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <h3>University of Illinois Chicago</h3>
+                <p><strong>Business Administration</strong> | AUGUST 2025 - MAY 2029</p>
+                
+                <h3>Ridgewood High School</h3>
+                <p><strong>High School Diploma</strong> | AUGUST 2021 - MAY 2025</p>
+                <p>Coursework: AP Chemistry, AP Language and Composition, AP Literature and Composition, AP United States History, AP Government, Honors Precalculus, Spanish 1-4 Honors</p>
+                <p><strong>Awards:</strong> High Honor Roll, Commendation Seal of Biliteracy</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">Hard working</span>
+                    <span class="skill-tag">Quick learner</span>
+                    <span class="skill-tag">Problem-solving</span>
+                    <span class="skill-tag">Team player</span>
+                    <span class="skill-tag">Customer service</span>
+                    <span class="skill-tag">Time management</span>
+                    <span class="skill-tag">Critical thinking</span>
+                    <span class="skill-tag">Adaptable</span>
+                    <span class="skill-tag">Multitasking</span>
+                    <span class="skill-tag">Bilingual (English/Spanish)</span>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Let's Connect</h2>
+                <p>I'm always open to new opportunities and conversations. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:lukautvic07@gmail.com">📧 lukautvic07@gmail.com</a>
+                    <a href="tel:+12244093527">📱 (224) 409-3527</a>
+                    <a href="https://www.linkedin.com/in/luka-utvic" target="_blank">💼 LinkedIn Profile</a>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Luka Utvic | lukautvic.me</p>
+                <p>Thanks for visiting!</p>
+            </footer>
         </div>
-        
-        <h2>Future Plans</h2>
-        <p>Looking ahead, I'm excited about:</p>
-        <ul>
-            <li>Completing my degree and making the most of my college years</li>
-            <li>Gaining practical experience through internships and projects</li>
-            <li>Building valuable connections and relationships</li>
-            <li>Exploring different career paths and opportunities</li>
-            <li>Continuing to learn and grow both personally and professionally</li>
-        </ul>
-        
-        <h2>Goals & Aspirations</h2>
-        <p>I believe in setting goals and working towards them. My aspirations include making a positive impact, pursuing meaningful work, and never stopping learning. I'm keeping an open mind about where life will take me while staying focused on personal growth.</p>
-        
-        <footer>
-            <p>&copy; 2025 Luka Utvic | lukautvic.me</p>
-            <p>Thanks for visiting!</p>
-        </footer>
     </div>
 </body>
 </html>
