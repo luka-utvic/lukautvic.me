@@ -170,16 +170,42 @@
             border-top: 2px solid #4EA5D9;
             color: #224870;
         }
+
+        /* Hamburger Menu Button - Hidden on Desktop */
+        .menu-btn {
+            display: none;
+        }
         
 
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
             .sidebar {
-                position: relative;
+                position: fixed;
+                left: -250px;
+                transition: left 0.3s ease;
+                z-index: 1000;
+                height: 100vh;
+            }
 
-                width: 100%;
-                height: auto;
-                left: 0;            
+            .sidebar.open {
+                left: 0;
+            }
+
+            /* Hamburger Menu Button */
+            .menu-btn {
+                display: block;
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1001;
+                background: #2A4494;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 24px;
+            }            
             
             .main-content {
                 margin-left: 0;
@@ -351,5 +377,16 @@
             </footer>
         </div>
     </div>
+
+    <!-- Hamburger Menu Button -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- JavaScript for Toggle -->
+    <script>
+        function toggleMenu() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
