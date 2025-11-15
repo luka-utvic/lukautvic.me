@@ -391,6 +391,8 @@ Click "Add New Record" again and add three more A Records with the same Host (@)
 
 ## What's Next?
 
+(If this section interests you I reccomend doing your own research. I do not know anything about these. **Remeber** you already did all that work, what is a little more? **Right?**
+
 ### Enhance Your Website
 
 - Add more pages (About, Projects, Blog, etc.)
