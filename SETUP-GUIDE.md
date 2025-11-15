@@ -39,9 +39,9 @@ By Luka Utvic | University of Illinois Chicago
   
 - If AI is giving you a hard time or you just need someone to help feel free to contact me using any of my links, phone number, or email!
 
-  - My [LinkedIN](www.linkedin.com/in/lukautvic)
+  - My [LinkedIn](www.linkedin.com/in/lukautvic)
   - My Email: lukautvic07@gmail.com
-  - My Phone #: +1 224-409-3527
+  - My Phone #: `+1 224-409-3527`
 
 
 -**Note** this whole process can be done for completley free, however, there are certain things you can do that cost money. They are all optional and do not change much.
