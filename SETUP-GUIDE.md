@@ -98,6 +98,8 @@ You now have a repository at: `https://github.com/YOUR-USERNAME/yourdomain.com`
 2. Name it: `index.html`
 3. Add your HTML content (here's a starter template):
 
+   **Note** Use AI for this part. It is really good at writing code. Feel free to use the provided template but do not be scared to be creative. If it looks horrible, **just undo it.**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
