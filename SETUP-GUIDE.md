@@ -29,7 +29,7 @@ By Luka Utvic | University of Illinois Chicago
 
   - Download comet [here](https://www.perplexity.ai/download-comet).
 
-*I cannot reccomend it enough*
+*I cannot reccomend This enough.*
 
 ## Introduction
 
