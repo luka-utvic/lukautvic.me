@@ -26,6 +26,13 @@ Before you start, you'll need:
 - Basic text editing skills
 - About 30-60 minutes of time
 
+- **Note** if you are feeling stuck, don't be afriad to take advantage of AI tools. Copy and paste instructions you don't understand or take screenshots and insert them and ask for help. I knew nothing about any of this before starting and I used AI to help me through.
+- If AI is giving you a hard time or you just need someone to help feel free to contact me using any of my links, phone number, or email!
+
+- My [LinkedIN](www.linkedin.com/in/lukautvic)
+- My Email: lukautvic07@gmail.com
+- My Phone #: +1 224-409-3527
+
 Total Cost: **FREE!**
 
 ---
@@ -43,9 +50,9 @@ Total Cost: **FREE!**
 - `.com` is classic and professional (.me is the only free option, should be just fine for what we are doing)
 - Keep it short and memorable
 
-### Step 1.2: Purchase Your Domain
+### Step 1.2: Purchase/Claim Your Domain
 
-1. Find your domain in the search results
+1. Choose your desired domain in the search results 
 2. Click "Add to Cart" next to your chosen domain
 3. Review your cart (you can usually skip the extras like WhoisGuard for now)
 4. Click "Confirm Order"
