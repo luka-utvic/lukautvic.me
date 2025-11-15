@@ -31,7 +31,8 @@ By Luka Utvic | University of Illinois Chicago
 - My Email: lukautvic07@gmail.com
 - My Phone #: +1 224-409-3527
 
-Total Cost: **FREE!**
+
+-**Note** this whole process can be done for completley free, however, there are certain things you can do that cost money. They are all optional and do not change much.
 
 ---
 
