@@ -23,11 +23,10 @@ By Luka Utvic | University of Illinois Chicago
 
 Before you start, you'll need:
 - A GitHub account (free) - [Sign up here](https://github.com/join)
-- A credit/debit card for domain registration (domains cost $1-15/year depending on the extension)
 - Basic text editing skills
 - About 30-60 minutes of time
 
-**Total Cost:** $1-15/year for the domain (everything else is FREE!)
+Total Cost: **FREE!**
 
 ---
 
@@ -35,14 +34,13 @@ Before you start, you'll need:
 
 ### Step 1.1: Find Your Domain
 
-1. Go to [Namecheap.com](https://www.namecheap.com)
+1. Go to [Namecheap.com](https://www.namecheap.com) For Students go to [Namecheap for Education](https://www.nc.me)
 2. In the search bar, type your desired domain name (e.g., "yourname")
 3. Click the search button
 
 **Pro Tips:**
 - `.me` domains are great for personal sites (e.g., `lukautvic.me`)
-- `.com` is classic and professional
-- As a student, check if your school offers free `.edu` subdomains
+- `.com` is classic and professional (.me is the only free option, should be just fine for what we are doing)
 - Keep it short and memorable
 
 ### Step 1.2: Purchase Your Domain
@@ -51,8 +49,8 @@ Before you start, you'll need:
 2. Click "Add to Cart" next to your chosen domain
 3. Review your cart (you can usually skip the extras like WhoisGuard for now)
 4. Click "Confirm Order"
-5. Create a Namecheap account or log in
-6. Complete the payment
+5. Create a Namecheap account or log in (Use school email!!)
+6. Complete the payment (Free unless you choose not to use a .me one)
 
 **Important:** Save your Namecheap login credentials securely!
 
