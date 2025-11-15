@@ -7,7 +7,7 @@ By Luka Utvic | University of Illinois Chicago
 ---
 
 ## Table of Contents
-1. [Prerequisites](#prerequisites)
+1. [Introduction](#introduction)
 2. [Part 1: Register Your Domain with Namecheap](#part-1-register-your-domain-with-namecheap)
 3. [Part 2: Set Up GitHub Repository](#part-2-set-up-github-repository)
 4. [Part 3: Create Your Website](#part-3-create-your-website)
