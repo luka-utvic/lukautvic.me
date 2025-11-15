@@ -23,9 +23,9 @@ By Luka Utvic | University of Illinois Chicago
 
 - Before starting I reccomend creating a perplexity account and downloading the commet browser. It is an ai powered browser that has the abiltiy to do tasks on your computer for you. **Crazy right!** It was a life saver for me throughout this entire process. 
 
-  - Create a perplexity account [here](https://www.perplexity.ai/onboarding/org/create)
+  - Create a perplexity account [here](https://www.perplexity.ai/onboarding/org/create).
 
-  - Download comet [here](https://www.perplexity.ai/download-comet)
+  - Download comet [here](https://www.perplexity.ai/download-comet).
 
 *I cannot reccomend it enough*
 
