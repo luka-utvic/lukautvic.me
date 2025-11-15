@@ -25,9 +25,9 @@ By Luka Utvic | University of Illinois Chicago
 
 - **Note** straight up ask the assistant to do things for you, **It's a robot don't feel bad.**
 
-  - Create a perplexity account [here](https://www.perplexity.ai/onboarding/org/create).
+  - Create a Perplexity account [here](https://www.perplexity.ai/onboarding/org/create).
 
-  - Download comet [here](https://www.perplexity.ai/download-comet).
+  - Download Comet [here](https://www.perplexity.ai/download-comet).
 
 *I cannot reccomend this enough.*
 
