@@ -379,7 +379,7 @@ Click "Add New Record" again and add three more A Records with the same Host (@)
 
 3. **Regular Backups:** Download your repository occasionally as a backup
 
-### Cost Saving Tips
+### Cost Saving Tips (Domain may only be valid for 1 year. It is easy to replace and should be free. Not 100% sure though. We will find out next year lol)
 
 1. **Domain Renewals:** Set a calendar reminder before your domain expires to renew or transfer
 
@@ -391,7 +391,7 @@ Click "Add New Record" again and add three more A Records with the same Host (@)
 
 ## What's Next?
 
-(If this section interests you I reccomend doing your own research. I do not know anything about these. **Remeber** you already did all that work, what is a little more? **Right?**
+(If this section interests you I reccomend doing your own research. I do not know anything about these. **Remeber** you already did all that work, what is a little more? **Right?**)
 
 ### Enhance Your Website
 
