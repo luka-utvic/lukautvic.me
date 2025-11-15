@@ -444,6 +444,7 @@ If you get stuck:
 3. **Namecheap Support:** They have 24/7 live chat
 4. **Ask Your Fellow Students:** Share this guide and help each other!
 5. **Stack Overflow:** Search for your specific error message
+6. **Ask Me for Help** Links to readh me are here: [Introduction](#introduction)
 
 ---
 
