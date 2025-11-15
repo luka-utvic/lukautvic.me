@@ -19,14 +19,12 @@ By Luka Utvic | University of Illinois Chicago
 
 ---
 
-## Prerequisites
+## Introduction
 
-Before you start, you'll need:
-- A GitHub account (free) - [Sign up here](https://github.com/join)
-- Basic text editing skills
-- About 30-60 minutes of time
+- This process will take some time and it is not the easiest thing, however, do not be discouraged. Prior to this, I had knew nothing about making websites at all and now I have created something awesome that is useful and very rewarding.
 
-- **Note** if you are feeling stuck, don't be afriad to take advantage of AI tools. Copy and paste instructions you don't understand or take screenshots and insert them and ask for help. I knew nothing about any of this before starting and I used AI to help me through.
+- **Note** if you are feeling stuck, don't be afriad to take advantage of AI tools. Copy and paste instructions you don't understand or take screenshots and insert them and ask for help.
+  
 - If AI is giving you a hard time or you just need someone to help feel free to contact me using any of my links, phone number, or email!
 
 - My [LinkedIN](www.linkedin.com/in/lukautvic)
@@ -75,7 +73,7 @@ Total Cost: **FREE!**
 
 ### Step 2.1: Create a New Repository
 
-1. Log in to [GitHub](https://github.com)
+1. Log in to [GitHub](https://github.com) or [Sign up here](https://github.com/join)
 2. Click the "+" icon in the top right corner
 3. Select "New repository"
 4. Configure your repository:
