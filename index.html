@@ -535,10 +535,12 @@ box-sizing: border-box;
             
             .header h1 {
                 font-size: 1.8em;
+                            margin: 0 auto;
             }
             
             .header p {
                 font-size: 1em;
+                            margin: 0 auto;
             }
             
             .contact-links a {
@@ -791,6 +793,8 @@ if (localStorage.getItem('darkMode') === 'true') {
          setTimeout(type, typingSpeed);
        } else {
          headline.style.borderRight = 'none';
+                           // Start typing subtitle after name is complete
+                typeSubtitle();
        }
      }
      
@@ -798,6 +802,35 @@ if (localStorage.getItem('darkMode') === 'true') {
      setTimeout(type, 300);
    }
  }
+
+                                           // Typing Animation for subtitle
+    function typeSubtitle() {
+        const subtitle = document.querySelector('.header-text .subtitle');
+        if (subtitle) {
+            const text = subtitle.textContent;
+            subtitle.textContent = '';
+            subtitle.style.overflow = 'hidden';
+            subtitle.style.borderRight = '2px solid #3E505B';
+            subtitle.style.whiteSpace = 'nowrap';
+            subtitle.style.width = 'fit-content';
+            
+            let index = 0;
+            const typingSpeed = 50;
+            
+            function typeChar() {
+                if (index < text.length) {
+                    subtitle.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeChar, typingSpeed);
+                } else {
+                    subtitle.style.borderRight = 'none';
+                }
+            }
+            
+            // Start typing subtitle
+            setTimeout(typeChar, 100);
+        }
+    }
  
  // Initialize typing animation on page load
  window.addEventListener('load', initTypingAnimation);
