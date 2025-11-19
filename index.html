@@ -815,22 +815,27 @@ if (localStorage.getItem('darkMode') === 'true') {
         if (!subtitle) return;
         
         const text = subtitle.textContent;
-        subtitle.textContent = '';
-        subtitle.style.setProperty('visibility', 'visible', 'important');
-        subtitle.style.borderRight = '2px solid #3E505B';
-        
-        let index = 0;
-        const speed = 30;
-        
-        function addChar() {
-            if (index < text.length) {
-                subtitle.textContent += text.charAt(index);
-                index++;
-                setTimeout(addChar, speed);
-            } else {
-                subtitle.style.borderRight = 'none';
-            }
+            const text = subtitle.textContent;
+    subtitle.innerHTML = '';
+    subtitle.style.setProperty('visibility', 'visible', 'important');
+    
+    const span = document.createElement('span');
+    span.style.borderRight = '2px solid #3E505B';
+    span.style.display = 'inline-block';
+    subtitle.appendChild(span);
+    
+    let index = 0;
+    const speed = 30;
+    
+    function addChar() {
+        if (index < text.length) {
+            span.textContent += text.charAt(index);
+            index++;
+            setTimeout(addChar, speed);
+        } else {
+            span.style.borderRight = 'none';
         }
+    }}
         
         setTimeout(addChar, 200);
     }
