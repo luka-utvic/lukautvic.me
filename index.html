@@ -143,11 +143,12 @@ box-sizing: border-box;
             margin-bottom: 5px;
             font-size: 2.5em;
         }
-        .header-text .subtitle {
+        Dont {
             color: #3E505B;
             font-size: 1.2em;
             margin-bottom: 15px;
                     visibility: hidden;
+                    min-height: 60px;
         }
         .contact-links {
             display: flex;
@@ -815,8 +816,7 @@ if (localStorage.getItem('darkMode') === 'true') {
                         subtitle.style.visibility = 'visible';
             subtitle.style.overflow = 'hidden';
             subtitle.style.borderRight = '2px solid #3E505B';
-            subtitle.style.whiteSpace = 'nowrap';
-            subtitle.style.width = 'fit-content';
+146
             
             let index = 0;
             const typingSpeed = 30;
