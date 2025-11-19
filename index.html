@@ -807,33 +807,30 @@ if (localStorage.getItem('darkMode') === 'true') {
    }
  }
 
-                                           // Typing Animation for subtitle
+    // Typing animation for subtitle
     function typeSubtitle() {
         const subtitle = document.querySelector('.header-text .subtitle');
-        if (subtitle) {
-            const text = subtitle.textContent;
-            subtitle.textContent = '';
-                        subtitle.style.visibility = 'visible';
-            subtitle.style.overflow = 'hidden';
-            subtitle.style.borderRight = '2px solid #3E505B';
-146
-            
-            let index = 0;
-            const typingSpeed = 30;
-            
-            function typeChar() {
-                if (index < text.length) {
-                    subtitle.textContent += text.charAt(index);
-                    index++;
-                    setTimeout(typeChar, typingSpeed);
-                } else {
-                    subtitle.style.borderRight = 'none';
-                }
+        if (!subtitle) return;
+        
+        const text = subtitle.textContent;
+        subtitle.textContent = '';
+        subtitle.style.visibility = 'visible';
+        subtitle.style.borderRight = '2px solid #3E505B';
+        
+        let index = 0;
+        const speed = 30;
+        
+        function addChar() {
+            if (index < text.length) {
+                subtitle.textContent += text.charAt(index);
+                index++;
+                setTimeout(addChar, speed);
+            } else {
+                subtitle.style.borderRight = 'none';
             }
-            
-            // Start typing subtitle
-            setTimeout(typeChar, 100);
         }
+        
+        setTimeout(addChar, 200);
     }
  
  // Initialize typing animation on page load
