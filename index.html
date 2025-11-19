@@ -816,7 +816,7 @@ if (localStorage.getItem('darkMode') === 'true') {
         
         const text = subtitle.textContent;
         subtitle.textContent = '';
-        subtitle.style.visibility = 'visible';
+        subtitle.style.setProperty('visibility', 'visible', 'important');
         subtitle.style.borderRight = '2px solid #3E505B';
         
         let index = 0;
