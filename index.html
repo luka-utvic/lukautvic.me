@@ -243,6 +243,250 @@ box-sizing: border-box;
         
 
         /* Mobile Responsive Styles */
+        
+ /* ANIMATION KEYFRAMES */
+ 
+ /* Fade-in Animation */
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+ 
+ /* Slide-in from bottom Animation */
+ @keyframes slideInUp {
+   from {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ 
+ /* Slide-in from left Animation */
+ @keyframes slideInLeft {
+   from {
+     opacity: 0;
+     transform: translateX(-30px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+ 
+ /* Slide-in from right Animation */
+ @keyframes slideInRight {
+   from {
+     opacity: 0;
+     transform: translateX(30px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+ 
+ /* Typing Animation for main headline */
+ @keyframes typing {
+   from {
+     width: 0;
+   }
+   to {
+     width: 100%;
+   }
+ }
+ 
+ /* Icon bounce Animation */
+ @keyframes bounce {
+   0%, 100% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-10px);
+   }
+ }
+ 
+ /* Icon pulse Animation */
+ @keyframes pulse {
+   0%, 100% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0.7;
+   }
+ }
+ 
+ /* Scroll progress indicator Animation */
+ @keyframes fillProgress {
+   from {
+     width: 0%;
+   }
+   to {
+     width: var(--scroll-width, 0%);
+   }
+ }
+ 
+ /* ANIMATION APPLICATIONS */
+ 
+ /* Apply fade-in to sections */
+ section {
+   animation: fadeIn 0.8s ease-in-out;
+   animation-fill-mode: both;
+ }
+ 
+ /* Stagger section animations */
+ section:nth-child(1) { animation-delay: 0.1s; }
+ section:nth-child(2) { animation-delay: 0.3s; }
+ section:nth-child(3) { animation-delay: 0.5s; }
+ section:nth-child(4) { animation-delay: 0.7s; }
+ section:nth-child(5) { animation-delay: 0.9s; }
+ 
+ /* Apply slide-in to header */
+ .header {
+   animation: slideInLeft 0.8s ease-out;
+   animation-fill-mode: both;
+ }
+ 
+ /* Apply slide-in to experience items */
+ .experience-item {
+   animation: slideInUp 0.6s ease-out;
+   animation-fill-mode: both;
+ }
+ 
+ .experience-item:nth-child(1) { animation-delay: 0.1s; }
+ .experience-item:nth-child(2) { animation-delay: 0.3s; }
+ .experience-item:nth-child(3) { animation-delay: 0.5s; }
+ .experience-item:nth-child(4) { animation-delay: 0.7s; }
+ 
+ /* Profile image fade-in */
+ .profile-img {
+   animation: fadeIn 1s ease-out;
+   animation-fill-mode: both;
+ }
+ 
+ /* Contact links hover animation with underline */
+ .contact-links a {
+   position: relative;
+   overflow: hidden;
+   animation: slideInUp 0.5s ease-out;
+   animation-fill-mode: both;
+ }
+ 
+ .contact-links a:nth-child(1) { animation-delay: 0.2s; }
+ .contact-links a:nth-child(2) { animation-delay: 0.3s; }
+ .contact-links a:nth-child(3) { animation-delay: 0.4s; }
+ .contact-links a:nth-child(4) { animation-delay: 0.5s; }
+ 
+ /* Underline animation on hover for links */
+ .contact-links a::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background: #3E505B;
+   transition: width 0.3s ease;
+   z-index: -1;
+ }
+ 
+ .contact-links a:hover::after {
+   width: 100%;
+ }
+ 
+ /* Navigation links enhancement */
+ .sidebar a {
+   transition: all 0.3s ease;
+   position: relative;
+ }
+ 
+ .sidebar a::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 3px;
+   height: 0;
+   background: #8AB0AB;
+   transition: height 0.3s ease;
+   border-radius: 2px;
+ }
+ 
+ .sidebar a:hover::before,
+ .sidebar a.active::before {
+   height: 20px;
+   animation: pulse 1.5s ease-in-out infinite;
+ }
+ 
+ /* Skill tags animation */
+ .skill-tag {
+   animation: slideInUp 0.6s ease-out;
+   animation-fill-mode: both;
+   transition: all 0.3s ease;
+ }
+ 
+ .skill-tag:nth-child(1) { animation-delay: 0.1s; }
+ .skill-tag:nth-child(2) { animation-delay: 0.2s; }
+ .skill-tag:nth-child(3) { animation-delay: 0.3s; }
+ .skill-tag:nth-child(4) { animation-delay: 0.4s; }
+ .skill-tag:nth-child(5) { animation-delay: 0.5s; }
+ .skill-tag:nth-child(6) { animation-delay: 0.6s; }
+ .skill-tag:nth-child(7) { animation-delay: 0.7s; }
+ .skill-tag:nth-child(8) { animation-delay: 0.8s; }
+ .skill-tag:nth-child(9) { animation-delay: 0.9s; }
+ .skill-tag:nth-child(10) { animation-delay: 1s; }
+ 
+ .skill-tag:hover {
+   transform: translateY(-5px) scale(1.05);
+   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+ }
+ 
+ /* Theme toggle animation */
+ .theme-toggle {
+   transition: all 0.3s ease;
+ }
+ 
+ .theme-toggle:hover {
+   animation: pulse 0.6s ease-in-out;
+ }
+ 
+ /* Dark mode transition animation */
+ body,
+ body.dark-mode {
+   transition: background-color 0.5s ease, color 0.5s ease;
+ }
+ 
+ /* Scroll progress bar */
+ .scroll-progress {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 4px;
+   background: linear-gradient(135deg, #3E505B 0%, #8AB0AB 100%);
+   width: 0%;
+   z-index: 1003;
+   animation: fillProgress 0.3s ease-out;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+ }
+ 
+ /* Heading animations */
+ h2 {
+   animation: slideInLeft 0.7s ease-out;
+   animation-fill-mode: both;
+ }
+ 
+ h3 {
+   animation: slideInLeft 0.6s ease-out;
+   animation-fill-mode: both;
+ }
+
         @media (max-width: 768px) {
             .sidebar {
                 position: fixed;
@@ -506,6 +750,63 @@ if (localStorage.getItem('darkMode') === 'true') {
         // Update on scroll and page load
         window.addEventListener('scroll', updateActiveNav);
         window.addEventListener('load', updateActiveNav);
+        
+ // Scroll Progress Bar
+ function updateScrollProgress() {
+   const scrollTop = window.scrollY;
+   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+   const scrollPercent = (scrollTop / docHeight) * 100;
+   
+   // Create or update progress bar
+   let progressBar = document.querySelector('.scroll-progress');
+   if (!progressBar) {
+     progressBar = document.createElement('div');
+     progressBar.className = 'scroll-progress';
+     document.body.insertBefore(progressBar, document.body.firstChild);
+   }
+   progressBar.style.width = scrollPercent + '%';
+ }
+ 
+ window.addEventListener('scroll', updateScrollProgress);
+ window.addEventListener('load', updateScrollProgress);
+ 
+ // Typing Animation for headline
+ function initTypingAnimation() {
+   const headline = document.querySelector('.header-text h1');
+   if (headline) {
+     const text = headline.textContent;
+     headline.textContent = '';
+     headline.style.overflow = 'hidden';
+     headline.style.borderRight = '2px solid #3E505B';
+     headline.style.whiteSpace = 'nowrap';
+     headline.style.width = 'fit-content';
+     
+     let index = 0;
+     const typingSpeed = 80;
+     
+     function type() {
+       if (index < text.length) {
+         headline.textContent += text.charAt(index);
+         index++;
+         setTimeout(type, typingSpeed);
+       } else {
+         headline.style.borderRight = 'none';
+       }
+     }
+     
+     // Start typing after a short delay
+     setTimeout(type, 300);
+   }
+ }
+ 
+ // Initialize typing animation on page load
+ window.addEventListener('load', initTypingAnimation);
+ 
+ // Also trigger if page is already loaded (cached)
+ if (document.readyState === 'complete' || document.readyState === 'interactive') {
+   initTypingAnimation();
+   updateScrollProgress();
+ }
 </script>
 </body>
 </html>
