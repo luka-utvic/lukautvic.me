@@ -147,6 +147,7 @@ box-sizing: border-box;
             color: #3E505B;
             font-size: 1.2em;
             margin-bottom: 15px;
+                    visibility: hidden;
         }
         .contact-links {
             display: flex;
@@ -541,6 +542,8 @@ box-sizing: border-box;
             .header p {
                 font-size: 1em;
                             margin: 0 auto;
+                            white-space: normal;
+            max-width: 100%;
             }
             
             .contact-links a {
@@ -809,13 +812,14 @@ if (localStorage.getItem('darkMode') === 'true') {
         if (subtitle) {
             const text = subtitle.textContent;
             subtitle.textContent = '';
+                        subtitle.style.visibility = 'visible';
             subtitle.style.overflow = 'hidden';
             subtitle.style.borderRight = '2px solid #3E505B';
             subtitle.style.whiteSpace = 'nowrap';
             subtitle.style.width = 'fit-content';
             
             let index = 0;
-            const typingSpeed = 50;
+            const typingSpeed = 30;
             
             function typeChar() {
                 if (index < text.length) {
