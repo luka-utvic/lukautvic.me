@@ -107,6 +107,11 @@ box-sizing: border-box;
             color: #8AB0AB;
             padding-left: 20px;
         }
+            .sidebar a.active {
+                background: #3E505B;
+                color: #8AB0AB;
+                padding-left: 20px;
+            }
         .main-content {
             margin-left: 250px;
             padding: 40px;
@@ -474,6 +479,33 @@ if (localStorage.getItem('darkMode') === 'true') {
   const btn = document.querySelector('.theme-toggle');
   if (btn) btn.textContent = '☀️';
 }
+
+        // Scroll Spy - Highlight navigation on scroll
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('[id]');
+            const navLinks = document.querySelectorAll('.sidebar a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Update on scroll and page load
+        window.addEventListener('scroll', updateActiveNav);
+        window.addEventListener('load', updateActiveNav);
 </script>
 </body>
 </html>
