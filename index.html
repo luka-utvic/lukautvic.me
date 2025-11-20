@@ -143,11 +143,11 @@ box-sizing: border-box;
             margin-bottom: 5px;
             font-size: 2.5em;
         }
-        .header-text .subtitle {
+        Dont {
             color: #3E505B;
             font-size: 1.2em;
             margin-bottom: 15px;
-                    visibility: hidden !important;
+                    visibility: hidden;
                     min-height: 60px;
         }
         .contact-links {
@@ -545,8 +545,6 @@ box-sizing: border-box;
                             margin: 0 auto;
                             white-space: normal;
             max-width: 100%;
-                            visibility: hidden;
-                            min-height: 60px;
             }
             
             .contact-links a {
@@ -809,35 +807,33 @@ if (localStorage.getItem('darkMode') === 'true') {
    }
  }
 
-    // Typing animation for subtitle
+                                           // Typing Animation for subtitle
     function typeSubtitle() {
         const subtitle = document.querySelector('.header-text .subtitle');
-        if (!subtitle) return;
-        
-        const text = subtitle.textContent;
+        if (subtitle) {
             const text = subtitle.textContent;
-    subtitle.innerHTML = '';
-    subtitle.style.setProperty('visibility', 'visible', 'important');
-    
-    const span = document.createElement('span');
-    span.style.borderRight = '2px solid #3E505B';
-    span.style.display = 'inline-block';
-    subtitle.appendChild(span);
-    
-    let index = 0;
-    const speed = 30;
-    
-    function addChar() {
-        if (index < text.length) {
-            span.textContent += text.charAt(index);
-            index++;
-            setTimeout(addChar, speed);
-        } else {
-            span.style.borderRight = 'none';
+            subtitle.textContent = '';
+                        subtitle.style.visibility = 'visible';
+            subtitle.style.overflow = 'hidden';
+            subtitle.style.borderRight = '2px solid #3E505B';
+146
+            
+            let index = 0;
+            const typingSpeed = 30;
+            
+            function typeChar() {
+                if (index < text.length) {
+                    subtitle.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeChar, typingSpeed);
+                } else {
+                    subtitle.style.borderRight = 'none';
+                }
+            }
+            
+            // Start typing subtitle
+            setTimeout(typeChar, 100);
         }
-    }}
-        
-        setTimeout(addChar, 200);
     }
  
  // Initialize typing animation on page load
