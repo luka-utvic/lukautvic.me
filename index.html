@@ -797,52 +797,6 @@ if (localStorage.getItem('darkMode') === 'true') {
          setTimeout(type, typingSpeed);
        } else {
          headline.style.borderRight = 'none';
-                           // Start typing subtitle after name is complete
-                typeSubtitle();
-       }
-     }
-     
-     // Start typing after a short delay
-     setTimeout(type, 300);
-   }
- }
-
-                                           // Typing Animation for subtitle
-    function typeSubtitle() {
-        const subtitle = document.querySelector('.header-text .subtitle');
-        if (subtitle) {
-            const text = subtitle.textContent;
-            subtitle.textContent = '';
-                        subtitle.style.visibility = 'visible';
-            subtitle.style.overflow = 'hidden';
-            subtitle.style.borderRight = '2px solid #3E505B';
-146
-            
-            let index = 0;
-            const typingSpeed = 30;
-            
-            function typeChar() {
-                if (index < text.length) {
-                    subtitle.textContent += text.charAt(index);
-                    index++;
-                    setTimeout(typeChar, typingSpeed);
-                } else {
-                    subtitle.style.borderRight = 'none';
-                }
-            }
-            
-            // Start typing subtitle
-            setTimeout(typeChar, 100);
-        }
-    }
- 
- // Initialize typing animation on page load
- window.addEventListener('load', initTypingAnimation);
- 
- // Also trigger if page is already loaded (cached)
- if (document.readyState === 'complete' || document.readyState === 'interactive') {
-   initTypingAnimation();
-   updateScrollProgress();
  }
 </script>
 </body>
