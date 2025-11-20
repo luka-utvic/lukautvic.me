@@ -48,6 +48,12 @@ body.dark-mode footer {
                         body.dark-mode .header-text .subtitle {
                                             color: #b8c9d0 !important;
                                         }
+
+                    /* Fade-in animation for subtitle */
+                    @keyframes fadeIn {
+                                    from { opacity: 0; }
+                                    to { opacity: 1; }
+                                }
                         body.dark-mode .contact-links a {
                                             background: #2d3d47 !important;
                                             color: #88d4f5 !important;
@@ -147,6 +153,14 @@ box-sizing: border-box;
             color: #3E505B;
             font-size: 1.2em;
             margin-bottom: 15px;
+
+                    .header-text .subtitle {
+                                    opacity: 0;
+                                }
+
+                    .header-text .subtitle.fade-in-active {
+                                    animation: fadeIn 1.5s ease forwards;
+                                }
                     visibility: hidden;
                     min-height: 60px;
         }
@@ -809,30 +823,9 @@ if (localStorage.getItem('darkMode') === 'true') {
 
                                            // Typing Animation for subtitle
     function typeSubtitle() {
-        const subtitle = document.querySelector('.header-text .subtitle');
+                const subtitle = document.querySelector('.header-text .subtitle');
         if (subtitle) {
-            const text = subtitle.textContent;
-            subtitle.textContent = '';
-                        subtitle.style.visibility = 'visible';
-            subtitle.style.overflow = 'hidden';
-            subtitle.style.borderRight = '2px solid #3E505B';
-146
-            
-            let index = 0;
-            const typingSpeed = 30;
-            
-            function typeChar() {
-                if (index < text.length) {
-                    subtitle.textContent += text.charAt(index);
-                    index++;
-                    setTimeout(typeChar, typingSpeed);
-                } else {
-                    subtitle.style.borderRight = 'none';
-                }
-            }
-            
-            // Start typing subtitle
-            setTimeout(typeChar, 100);
+            subtitle.classList.add('fade-in-active');
         }
     }
  
